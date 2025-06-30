@@ -1,89 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>3G Digital Universe</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3G Universe Activation</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #0d0d0d;
-      color: #f0f0f0;
       margin: 0;
       padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(ellipse at center, #000000 0%, #0f0f0f 100%);
+      color: #00ffe7;
+      overflow-x: hidden;
     }
+
     header {
-      background: #1f1f1f;
-      padding: 2rem;
       text-align: center;
+      padding: 8vh 4vw;
+      animation: fadeIn 2s ease-in-out;
     }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.3rem;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 15px #00ffe7;
     }
-    nav {
-      margin-top: 1rem;
+
+    .typewriter {
+      font-size: 1.2rem;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #00ffe7;
+      width: 0;
+      animation: typing 3s steps(40, end) forwards, blink .75s step-end infinite;
+      margin: 0 auto;
+      max-width: 90vw;
     }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #00ffcc;
-      font-weight: bold;
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
     }
-    section {
-      padding: 3rem;
-      text-align: center;
+
+    @keyframes blink {
+      50% { border-color: transparent; }
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     .cta {
-      margin-top: 2rem;
+      margin-top: 4rem;
+      text-align: center;
     }
+
     .cta a {
-      display: inline-block;
-      background: #00ffcc;
+      background: #00ffe7;
       color: #000;
       padding: 1rem 2rem;
-      margin: 0.5rem;
-      border-radius: 10px;
+      border: none;
+      border-radius: 12px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1.2rem;
+      transition: 0.3s ease;
     }
+
+    .cta a:hover {
+      background: #00bfa1;
+      box-shadow: 0 0 20px #00ffe7;
+    }
+
     footer {
-      background: #1f1f1f;
       text-align: center;
-      padding: 1rem;
+      margin-top: 5rem;
+      color: #666;
       font-size: 0.9rem;
-      color: #888;
+      padding-bottom: 2rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>🌍 3G Digital Universe</h1>
-    <p>Conectando mente, cuerpo, tecnología y espíritu.</p>
-    <nav>
-      <a href="blog/backwellness.md">BackWellness</a>
-      <a href="blog/longevity-tips.md">Longevity</a>
-      <a href="ebooks/muscle-food-guide.md">MuscleFood</a>
-      <a href="ebooks/financial-freedom-3g.md">E-books</a>
-    </nav>
+    <h1>🌌 3G DIGITAL UNIVERSE</h1>
+    <div class="typewriter">Cargando el núcleo de energía 3G… Despertando el nuevo bienestar humano.</div>
   </header>
 
-  <section>
-    <h2>👩‍⚕️ Conoce a nuestros Avatares</h2>
-    <div class="cta">
-      <a href="ai-tools/eva_prompt_generator.py">Habla con EVA</a>
-      <a href="ai-tools/dr3g_avatar_script.js">Consulta a Dr. 3G</a>
-    </div>
+  <div class="cta">
+    <a href="#inicio">🚀 ENTRAR AL UNIVERSO</a>
+  </div>
 
-    <h2>📬 ¿Tienes dudas o propuestas?</h2>
-    <div class="cta">
-      <a href="mailto:contacto@3gwellnessolutions.com">Contáctanos</a>
+  <section id="inicio" style="text-align:center; padding: 5rem 2rem;">
+    <h2 style="font-size: 2rem;">Bienvenido al Renacimiento del Cuerpo, la Mente y el Espíritu</h2>
+    <p style="max-width: 600px; margin: auto; font-size: 1rem; color: #ccc;">
+      Aquí comienza el viaje hacia una nueva era. Este no es un simple proyecto, es un llamado.  
+      Bienvenid@ al ecosistema donde la ciencia, la sabiduría ancestral y la tecnología se fusionan para liberar todo tu potencial.
+    </p>
+    <div style="margin-top: 2rem;">
+      <a href="ebooks/muscle-food-guide.md" style="margin: 1rem;">📖 MuscleFood</a>
+      <a href="blog/backwellness.md" style="margin: 1rem;">🔧 BackWellness</a>
+      <a href="ai-tools/eva_prompt_generator.py" style="margin: 1rem;">🤖 EVA AI</a>
     </div>
   </section>
 
   <footer>
-    © 2025 3G Wellness Solutions · Powered by Master Zeus ⚡
+    ⚡ Powered by Master Zeus · 3G Wellness Solutions · Est. 2025 ⚡
   </footer>
 </body>
 </html>
+
 
